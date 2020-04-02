@@ -6,10 +6,10 @@ const nextBirthdayContainer = document.querySelector('#birthday');
 const spinnerLoading = document.querySelector('#loading');
 const countDownContainer = document.querySelector('#countdown');
 
-const nextBirthday = new Date().getFullYear();
+const nextBirthday = new Date().getFullYear() +1;
 const newBirthdayTime = new Date(`April 03 ${nextBirthday} 00:00:00`);
 
-nextBirthdayContainer.textContent = 'Feliz aniversário';
+nextBirthdayContainer.textContent = nextBirthday;
 
 const getTimeUnit = unit => unit < 10 ? '0' + unit : unit;
 
